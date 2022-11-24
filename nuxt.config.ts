@@ -3,7 +3,4 @@ export default defineNuxtConfig({
   css: [
     '@/stylus/main.styl'
   ]
-
-
 })
-

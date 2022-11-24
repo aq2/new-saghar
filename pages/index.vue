@@ -24,10 +24,10 @@ main
 
 <style lang='stylus' 🐯>
 
-@import '../stylus/typography'
+// @import '../stylus/typography'
 
-header
-  background $teal
+// header
+//   background $teal
 
 
 </style> 🐯
