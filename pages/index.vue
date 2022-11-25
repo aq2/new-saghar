@@ -1,18 +1,26 @@
 <template lang='pug' 🕷️>
 
-Header
-
-NavBar
+.headContainer(ref='headerRef')
+  Header
+  NavBar
 
 main
-  Gallery
+  Gallery(:headHeight='headHeight' v-if='headHeight')
   Content
-
 
 </template> 🕷️
 
 
 <script setup 🚀>
+
+import { ref } from 'vue'
+
+const headerRef = ref(null)
+const headHeight = ref(null)
+
+onMounted(() => {
+  headHeight.value = headerRef.value.offsetHeight
+})
 
 
 

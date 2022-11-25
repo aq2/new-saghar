@@ -2,9 +2,9 @@
 export default defineNuxtConfig({
   css: [
     '@/stylus/main.styl',
-    '~/assets/fonts/philosopher.css'
-  ],
-
+    '~/assets/fonts/philosopher.css',
+    '~/assets/fonts/mulish.css'
+  ]
 })
 
 head: {

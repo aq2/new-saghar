@@ -1,14 +1,20 @@
 <template lang='pug' 🕷️>
 
 .gallery
-  img(src='../imgs/gall/gal1.jpg')
+  img(src='../imgs/gall/gal1.jpg' ref='imageRef')
 
 </template> 🕷️
 
 
 <script setup 🚀>
 
-/// todo change width/height
+import { ref } from 'vue'
+const imageRef = ref(null)
+const props = defineProps(['headHeight'])
+
+onMounted(() => {
+  imageRef.value.style.height = window.innerHeight - props.headHeight + 'px'
+})
 
 
 </script> 🚀
@@ -21,9 +27,9 @@
 //   height 100%
 
 img
-  height 100%
+  // height 100%
   // width 100%
-  object-fit contain
+  // object-fit contain
   // height 75vh
 
 </style> 🐯
