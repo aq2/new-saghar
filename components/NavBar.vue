@@ -1,6 +1,7 @@
 <template lang='pug' 🕷️>
 
-nav(@click='navClicked')
+//- nav(@click='navClicked')
+nav(@click="$emit('navvy', e)")
   .tab#welcome Welcome
   .tab#treatments Treatments
   .tab#training Massage Training
@@ -14,8 +15,11 @@ nav(@click='navClicked')
 
 <script setup 🚀>
 
+const emit = defineEmits(['navvy'])
+
 const navClicked = (e) => {
-  console.log(e.target.id)
+  console.log('emit', e.target.id)
+  emit('navvy', e.target.id)
 }
 
 </script> 🚀
@@ -34,7 +38,7 @@ nav .tab
   cursor pointer
   text-align center
   border 2px solid orange
-  background $green
-  height 100%
+  // background $green
+  // height 100%
 
 </style> 🐯
