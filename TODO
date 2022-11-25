@@ -1,7 +1,9 @@
 Todo:
   ☐ index layout
-  ☐ stlyesheet organisation
+  ✔ stylesheet organisation @done(25-11-22 13:19)
+  ✔ import fonts @done(25-11-22 13:19)
   ✔ get old files in stuff - images, stylus, pug @done(25-11-22 11:36)
+  ☐ navbar problem -> changes height with width, flexy wrap
 
 eventaully:
   ☐ favicon

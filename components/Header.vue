@@ -1,0 +1,28 @@
+<template lang='pug' 🕷️>
+
+header
+  img(src='../imgs/om.png')
+  h1 Ayurvedic Yoga Massage
+  img(src='../imgs/gall/head133.jpg')
+
+</template> 🕷️
+
+
+<script setup 🚀>
+
+
+
+</script> 🚀
+
+
+<style lang='stylus' scoped 🐯>
+
+header
+  display flex
+  // height 150px
+  background black
+  color white
+  justify-content space-evenly
+
+
+</style> 🐯

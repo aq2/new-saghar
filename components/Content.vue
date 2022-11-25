@@ -1,13 +1,6 @@
 <template lang='pug' 🕷️>
 
-Header
-
-NavBar
-
-main
-  Gallery
-  Content
-
+h1 insert content
 
 </template> 🕷️
 
@@ -19,10 +12,8 @@ main
 </script> 🚀
 
 
-<style lang='stylus' 🐯>
+<style lang='stylus' scoped 🐯>
 
-main
-  display flex
 
 
 </style> 🐯

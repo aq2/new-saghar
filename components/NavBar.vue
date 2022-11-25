@@ -9,8 +9,6 @@ nav
   .tab#dosha Dosha Principles
   .tab#contact Contact
 
-  p hi
-
 </template> 🕷️
 
 
@@ -22,8 +20,6 @@ nav
 
 
 <style lang='stylus' scoped  🐯>
-@import '../stylus/typography'
-
 
 nav
   display flex
@@ -37,5 +33,6 @@ nav .tab
   text-align center
   border 2px solid orange
   background $green
+  height 100%
 
 </style> 🐯
