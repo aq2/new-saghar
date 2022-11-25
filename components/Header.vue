@@ -18,11 +18,11 @@ header
 <style lang='stylus' scoped 🐯>
 
 header
-  display flex
-  // height 150px
-  background black
   color white
+  display flex
+  background black
   justify-content space-evenly
+
 
 
 </style> 🐯
