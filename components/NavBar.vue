@@ -1,6 +1,6 @@
 <template lang='pug' 🕷️>
 
-nav
+nav(@click='navClicked')
   .tab#welcome Welcome
   .tab#treatments Treatments
   .tab#training Massage Training
@@ -14,7 +14,9 @@ nav
 
 <script setup 🚀>
 
-
+const navClicked = (e) => {
+  console.log(e.target.id)
+}
 
 </script> 🚀
 
