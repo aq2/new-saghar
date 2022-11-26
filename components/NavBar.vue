@@ -1,9 +1,10 @@
 <template lang='pug' 🕷️>
 
 //- nav(@click='navClicked')
-nav(@click="$emit('navvy', e)")
-  .tab#welcome Welcome
-  .tab#treatments Treatments
+//- nav(@click="$emit('navvy', e)")
+nav
+  .tab#welcome(@click='welcomeClicked') Welcome
+  .tab#treatments(@click="$emit('treatClicked')") Treatments
   .tab#training Massage Training
   .tab#yoga Yoga Classes
   .tab#joyful Joyful Living
@@ -15,11 +16,23 @@ nav(@click="$emit('navvy', e)")
 
 <script setup 🚀>
 
-const emit = defineEmits(['navvy'])
+const emit = defineEmits(['navvy', 'switchTab', 'welcome', 'treatClicked'])
 
 const navClicked = (e) => {
-  console.log('emit', e.target.id)
-  emit('navvy', e.target.id)
+  console.log('navClicked', e.target.id)
+  // emit('navvy', e.target.id)
+  emit('navvy')
+}
+
+const welcomeClicked = () => {
+  console.log('welcome clicked')
+  emit('welcome')
+}
+
+
+const changeTab = (tab) => {
+  console.log('navClicked', tab)
+  emit('switchTab', tab)
 }
 
 </script> 🚀

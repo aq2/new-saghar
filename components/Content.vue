@@ -1,8 +1,8 @@
 <template lang='pug' 🕷️>
 
-.tabContainer(@navvy='changeTab(tab)')
+.tabContainer(@comewell='wilkommen')
 
-  section(v-if="currentTab=='welcome'")
+  section(v-if="currentTab=='welcome'" @switchTab='swatch')
     include ../tabs/welcome.pug
 
   section(v-if="currentTab=='training'")
@@ -20,6 +20,14 @@ const changeTab = (tab) => {
   console.log('tab', tab)
   currentTab = tab
   console.log('cT', currentTab)
+}
+
+const swatch = () => {
+  console.log('switch')
+}
+
+const wilkommen = () => {
+  console.log('welcome recieved in content')
 }
 </script> 🚀
 
